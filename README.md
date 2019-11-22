@@ -1,1 +1,2 @@
-# python-for-decision-makers-course
+# Python for Decision Makers and Business Leaders
+
