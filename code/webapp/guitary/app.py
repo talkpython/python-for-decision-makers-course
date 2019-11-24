@@ -7,8 +7,7 @@ app = flask.Flask(__name__)
 
 @app.route('/')
 def index():
-    data = ['a', 'b', 'e', 'j']
-    return flask.render_template('index.html', values=data)
+    return flask.render_template('index.html')
 
 
 @app.route('/guitars')
