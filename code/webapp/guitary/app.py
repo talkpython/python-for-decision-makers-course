@@ -10,9 +10,10 @@ def index():
     return flask.render_template('index.html')
 
 
+@app.route('/guitars/<style>')
 @app.route('/guitars')
-def guitars():
-    guitar_list = catalog_service.all_guitars(None)
+def guitars(style=None):
+    guitar_list = catalog_service.all_guitars(style)
     return flask.render_template('guitars.html', guitars=guitar_list)
 
 
